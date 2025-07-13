@@ -13,8 +13,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/travel_plan
-    username: root
-    password: wujialu0608
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
   profiles:
     active: local
   # 开放更大的文件上传体积
@@ -27,13 +27,29 @@ spring:
       database: 0
       host: 127.0.0.1
       port: 6379
-      password: wujialu0608
+      password: ${spring.datasource.password}
       timeout: 5000
   # session 配置
   session:
     store-type: redis
     # session 30 天过期
     timeout: 2592000
+#  ai:
+#    vectorstore:
+#      pgvector:
+#        index-type: HNSW
+#        dimensions: 1536
+#        distance-type: COSINE_DISTANCE
+#        max-document-batch-size: 10000 # Optional: Maximum number of documents per batch
+# 临时注释
+#    mcp:
+#      client:
+#        sse:
+#          connections:
+#            server1:
+#              url: http://localhost:8127
+#        stdio:
+#        servers-configuration: classpath:mcp-servers.json
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
