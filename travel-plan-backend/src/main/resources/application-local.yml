@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: travel-plan-backend
+  ai:
+    dashscope:
+      api-key: sk-03cea84161a2421cb36fb892ea71c5b7
+      chat:
+        options:
+          model: qwen-plus
+cos:
+  client:
+    host: https://travel-plan-1306530980.cos.ap-beijing.myqcloud.com
+    secretId: AKIDAWikeNuGVXMxOehXAaprhKlyxjVDk4GN
+    secretKey: 88wXyDF7nIbkhT5UikZAamndGg3KSEum
+    region: ap-beijing
+    bucket: travel-plan-1306530980
+# 阿里云 AI 配置
+aliYunAi:
+  apiKey: sk-03cea84161a2421cb36fb892ea71c5b7
+search-api:
+  api-key: p9yfQCUCQz1ZpKidcK6tTXxg
