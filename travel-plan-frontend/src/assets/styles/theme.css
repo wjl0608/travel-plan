@@ -1,0 +1,202 @@
+/* Hello Kitty Theme CSS Variables */
+:root {
+  --hk-primary: #4A90E2;
+  --hk-primary-light: #7FBCFF;
+  --hk-primary-dark: #3A70B2;
+  --hk-secondary: #FFFFFF;
+  --hk-accent: #F5A623;
+  --hk-accent-light: #FFD180;
+  --hk-text: #333333;
+  --hk-text-light: #666666;
+  --hk-background: #F8FAFF;
+  --hk-border-radius: 12px;
+  --hk-box-shadow: 0 4px 8px rgba(74, 144, 226, 0.15);
+  --hk-transition: all 0.3s ease;
+  --hk-font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--hk-font-family);
+  background-color: var(--hk-background);
+  color: var(--hk-text);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hello Kitty Card Style */
+.hk-card {
+  background-color: var(--hk-secondary);
+  border-radius: var(--hk-border-radius);
+  box-shadow: var(--hk-box-shadow);
+  padding: 20px;
+  transition: var(--hk-transition);
+}
+
+.hk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(74, 144, 226, 0.2);
+}
+
+/* Hello Kitty Button */
+.hk-button {
+  background-color: var(--hk-primary);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--hk-transition);
+}
+
+.hk-button:hover {
+  background-color: var(--hk-primary-dark);
+  transform: scale(1.05);
+}
+
+.hk-button.secondary {
+  background-color: var(--hk-accent);
+}
+
+.hk-button.secondary:hover {
+  background-color: var(--hk-accent-light);
+}
+
+/* Hello Kitty Form Elements */
+.hk-input {
+  border: 2px solid var(--hk-primary-light);
+  border-radius: 50px;
+  padding: 8px 15px;
+  width: 100%;
+  transition: var(--hk-transition);
+}
+
+.hk-input:focus {
+  outline: none;
+  border-color: var(--hk-primary);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* Hello Kitty Decorative Elements */
+.hk-bow {
+  position: relative;
+  padding-top: 15px;
+}
+
+.hk-bow::before {
+  content: '🎀';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+/* Hello Kitty Background Pattern */
+.hk-pattern-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234A90E2' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Responsive Design Classes */
+.hk-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Hello Kitty Responsive Grid */
+.hk-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.hk-col {
+  padding: 0 15px;
+  width: 100%;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 576px) {
+  .hk-col-sm-6 {
+    width: 50%;
+  }
+  .hk-col-sm-4 {
+    width: 33.333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hk-col-md-6 {
+    width: 50%;
+  }
+  .hk-col-md-4 {
+    width: 33.333333%;
+  }
+  .hk-col-md-3 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .hk-col-lg-3 {
+    width: 25%;
+  }
+  .hk-col-lg-4 {
+    width: 33.333333%;
+  }
+  .hk-col-lg-6 {
+    width: 50%;
+  }
+}
+
+/* Hello Kitty Utility Classes */
+.hk-text-center {
+  text-align: center;
+}
+
+.hk-mt-3 {
+  margin-top: 1rem;
+}
+
+.hk-mb-3 {
+  margin-bottom: 1rem;
+}
+
+.hk-p-3 {
+  padding: 1rem;
+}
+
+/* Hello Kitty Header and Footer */
+.hk-header, .hk-footer {
+  background-color: var(--hk-primary-light);
+  padding: 1rem 0;
+  color: var(--hk-text);
+}
+
+.hk-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--hk-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hk-primary-light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hk-primary);
+} 

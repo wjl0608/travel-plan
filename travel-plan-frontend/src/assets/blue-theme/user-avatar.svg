@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background Circle -->
+  <circle fill="#4A90E2" cx="50" cy="50" r="45"/>
+  
+  <!-- User Silhouette -->
+  <circle fill="#FFFFFF" cx="50" cy="40" r="15"/>
+  <path fill="#FFFFFF" d="M25,85 C25,65 75,65 75,85 L25,85 Z"/>
+  
+  <!-- Details -->
+  <circle fill="#7FBCFF" cx="50" cy="40" r="12"/>
+  <path fill="#7FBCFF" d="M30,85 C30,70 70,70 70,85 L30,85 Z"/>
+  
+  <!-- Face -->
+  <circle fill="#333333" cx="45" cy="38" r="2"/>
+  <circle fill="#333333" cx="55" cy="38" r="2"/>
+  <path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" d="M45,45 Q50,48 55,45"/>
+</svg> 

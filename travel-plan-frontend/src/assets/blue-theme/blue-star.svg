@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Blue Star -->
+  <path fill="#4A90E2" d="M50,5 L61.2,39.5 L97.5,39.5 L68.2,61.5 L79.4,95.9 L50,73.9 L20.6,95.9 L31.8,61.5 L2.5,39.5 L38.8,39.5 Z"/>
+  
+  <!-- Inner Highlight -->
+  <path fill="#7FBCFF" d="M50,15 L58.5,41 L85.5,41 L63.5,58 L72,83.9 L50,66.9 L28,83.9 L36.5,58 L14.5,41 L41.5,41 Z"/>
+  
+  <!-- Center Circle -->
+  <circle fill="#FFFFFF" cx="50" cy="50" r="10"/>
+  <circle fill="#F5A623" cx="50" cy="50" r="5"/>
+</svg> 
